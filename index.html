@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>上海聖誕遊 5 天 4 夜｜2026.12.24–12.28</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FFFCF6;--ink:#3E3A39;--coral:#F2A497;--sun:#F6D27A;--sky:#A8D3E6;--leaf:#B9DAA5;color-scheme:light;--r:24px;--b:3px solid var(--ink)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--paper);color:var(--ink);font-family:"Huninn","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.6;padding-bottom:40px}
+a{color:inherit}
+:focus-visible{outline:3px dashed var(--coral);outline-offset:3px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;background:var(--paper);border-bottom:var(--b);display:flex;align-items:center;justify-content:space-between;padding:10px 14px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+.nav b{font-size:17px}
+.nav div{display:flex;gap:6px}
+.nav a{text-decoration:none;font-size:14px;padding:3px 12px;border:var(--b);border-radius:99px;background:var(--paper)}
+.nav a.on{background:var(--coral)}
+main{max-width:560px;margin:0 auto;padding:calc(76px + env(safe-area-inset-top,0px)) 16px 0}
+section{margin-top:30px}
+h2{font-size:22px;margin-bottom:12px;display:flex;align-items:center;gap:8px;font-weight:400}
+h2 i{width:14px;height:14px;border:var(--b);border-radius:50%;background:var(--sun)}
+.art{border:var(--b);border-radius:28px;overflow:hidden;background:var(--paper)}
+.art svg{display:block;width:100%;height:auto}
+.hero{text-align:center;padding-top:6px}
+.hero h1{font-size:36px;font-weight:400;margin:14px 0 2px;letter-spacing:2px}
+.hero p{font-size:15px}
+.count{display:inline-block;margin-top:12px;background:var(--sun);border:var(--b);border-radius:99px;padding:4px 18px;box-shadow:0 4px 0 var(--ink)}
+.card{border:var(--b);border-radius:var(--r);padding:14px 16px;box-shadow:0 5px 0 var(--ink);margin-bottom:16px}
+.fl-sky{background:var(--sky)}.fl-leaf{background:var(--leaf)}
+.fl-h{display:flex;justify-content:space-between;font-size:14px}
+.fl-m{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:4px 0}
+.fl-m strong{font-size:30px;font-weight:400}
+.fl-m span{flex:1;text-align:center;font-size:12px;border-top:3px dotted var(--ink);padding-top:2px}
+.fl-p{display:flex;justify-content:space-between;font-size:14px}
+.note{font-size:13px;margin-top:6px}
+.note.warn{color:#B4503F}
+.days{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px;scrollbar-width:none}
+.days::-webkit-scrollbar{display:none}
+.days a{display:block;text-align:center;text-decoration:none;flex:1 0 62px;font:inherit;color:inherit;background:var(--paper);border:var(--b);border-radius:18px;padding:6px 4px;cursor:pointer;line-height:1.3}
+.days a small{display:block;font-size:12px}
+.days a.on{background:var(--coral);box-shadow:0 4px 0 var(--ink);transform:translateY(-3px)}
+.dayhead{border:var(--b);border-radius:var(--r);padding:12px 16px;display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.dayhead svg{width:46px;height:46px;flex:none}
+.dayhead small{font-size:13px;display:block}
+.dayhead b{font-weight:400;font-size:19px;line-height:1.35;display:block}
+.pop{animation:pop .5s cubic-bezier(.3,1.7,.5,1)}
+@keyframes pop{0%{transform:scale(.88) translateY(14px);opacity:0}100%{transform:none;opacity:1}}
+.js .dp{display:none}.js .dp.on{display:block}.dp+.dp{margin-top:24px}
+.tl{list-style:none;padding:8px 0 0 0;position:relative}
+.tl li{display:grid;grid-template-columns:52px 20px 1fr;gap:0 6px;position:relative;padding-bottom:14px}
+.tl li::before{content:"";position:absolute;left:61px;top:14px;bottom:-4px;border-left:3px dashed var(--ink)}
+.tl li:last-child::before{display:none}
+.tl time{font-size:14px;text-align:right;padding-top:12px;line-height:1.3}
+.dot{width:16px;height:16px;border:var(--b);border-radius:50%;background:var(--paper);margin-top:15px;margin-left:2px;position:relative;z-index:1}
+li.must .dot{background:var(--coral)}
+.box{border:var(--b);border-radius:18px;padding:8px 12px;background:var(--paper);margin-left:6px}
+.row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:2px}
+.tag{font-size:12px;border:2.5px solid var(--ink);border-radius:99px;padding:0 10px;line-height:1.5}
+.t-飛機,.t-住宿{background:var(--sky)}.t-地鐵{background:var(--leaf)}.t-計程車,.t-美食{background:var(--sun)}.t-步行{background:var(--paper)}.t-必去{background:var(--coral)}
+.box b{font-weight:400;font-size:16px;display:block}
+.box small{font-size:13px;display:block}
+.box a{display:inline-block;font-size:12px;margin-top:4px;border-bottom:2px solid var(--coral);text-decoration:none}
+.ck{list-style:none;padding:0}
+.ck label{display:flex;gap:10px;align-items:flex-start;padding:7px 0;cursor:pointer;border-bottom:2px dotted var(--ink)}
+.ck li:last-child label{border:0}
+.ck input{appearance:none;flex:none;width:24px;height:24px;border:var(--b);border-radius:8px;background:var(--paper);margin-top:2px;cursor:pointer;display:grid;place-items:center}
+.ck input:checked{background:var(--leaf)}
+.ck input:checked::after{content:"";width:6px;height:11px;border:solid var(--ink);border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.ck input:checked+span{text-decoration:line-through;opacity:.55}
+.stay{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:2px dotted var(--ink)}
+.stay:last-child{border:0}
+.stay a{font-size:12px;border-bottom:2px solid var(--coral);text-decoration:none}
+.stay small{font-size:13px;white-space:nowrap}
+.foot{text-align:center;margin-top:30px;font-size:14px}
+.foot a{border-bottom:3px solid var(--sun);text-decoration:none}
+/* 插圖動畫 */
+.sun-r{transform-box:fill-box;transform-origin:center;animation:spin 40s linear infinite}
+.boat{animation:bob 4s ease-in-out infinite}
+.w1{animation:wave 7s ease-in-out infinite alternate}
+.w2{animation:wave 9s ease-in-out infinite alternate-reverse}
+.snow{animation:fall 7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(5px) rotate(-3deg)}}
+@keyframes wave{from{transform:translateX(-14px)}to{transform:translateX(14px)}}
+@keyframes fall{from{transform:translate(0,-12px)}50%{transform:translate(8px,60px)}to{transform:translate(-4px,130px)}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .sun-r,.snow,.boat,.w1,.w2,.pop{animation:none!important}
+  .days a.on{transform:none}
+}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="主選單">
+  <b>上海聖誕遊</b>
+  <div><a href="#flight" data-s="flight">航班</a><a href="#plan" data-s="plan">行程</a><a href="#prep" data-s="prep">準備</a></div>
+</nav>
+
+<main>
+<section class="hero" id="top" style="margin-top:0">
+  <div class="art">
+    <svg viewBox="0 0 360 210" role="img" aria-label="手繪上海聖誕風景：東方明珠、上海中心、聖誕樹、飄雪與渡輪">
+      <g class="sun-r"><g transform="translate(-200 -6)"><path d="M320 46h8M311.8 65.8l5.7 5.7M292 74v8M272.2 65.8l-5.7 5.7M264 46h-8M272.2 26.2l-5.7-5.7M292 18v-8M311.8 26.2l5.7-5.7" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/></g></g>
+      <circle cx="92" cy="40" r="17" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/>
+      <path d="M142 96h28v44h-28zM174 84h24v56h-24z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M142 96l14-12 14 12M174 84l12-14 12 14" fill="#F6D27A" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M290 140V72Q297 42 306 30Q314 60 316 140z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M250 14v34" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/>
+      <path d="M241 140l5-44M259 140l-5-44M250 52v34" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="250" cy="52" r="8" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/>
+      <circle cx="250" cy="88" r="17" fill="#F2A497" stroke="#3E3A39" stroke-width="3"/>
+      <rect x="0" y="138" width="360" height="72" fill="#A8D3E6"/>
+      <path d="M0 138H360" stroke="#3E3A39" stroke-width="3"/>
+      <rect x="55" y="124" width="9" height="14" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/>
+      <path d="M60 66L42 96H78zM60 84L34 114H86zM60 102L28 134H92z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M60 52l3 7 7 1-5 5 1 7-6-4-6 4 1-7-5-5 7-1z" fill="#F6D27A" stroke="#3E3A39" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="52" cy="108" r="3.5" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/><circle cx="70" cy="124" r="3.5" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/><circle cx="58" cy="92" r="3.5" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/>
+      <g class="boat"><path d="M140 158h50l-7 12h-36z" fill="#F2A497" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><rect x="152" y="144" width="26" height="14" rx="4" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"/></g>
+      <path class="w1" d="M-20 184q15-10 30 0t30 0 30 0 30 0 30 0 30 0 30 0 30 0 30 0 30 0 30 0 30 0" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/>
+      <path class="w2" d="M-20 200q15-10 30 0t30 0 30 0 30 0 30 0 30 0 30 0 30 0 30 0 30 0 30 0 30 0" fill="none" stroke="#FFFCF6" stroke-width="3" stroke-linecap="round"/>
+      <g fill="#FFFCF6" stroke="#3E3A39" stroke-width="2"><circle class="snow" cx="24" cy="20" r="3" style="animation-delay:-1s"/><circle class="snow" cx="120" cy="10" r="2.5" style="animation-delay:-4s"/><circle class="snow" cx="196" cy="24" r="3" style="animation-delay:-2s"/><circle class="snow" cx="226" cy="8" r="2.5" style="animation-delay:-5s"/><circle class="snow" cx="336" cy="14" r="3" style="animation-delay:-3s"/><circle class="snow" cx="160" cy="48" r="2.5" style="animation-delay:-6s"/><circle class="snow" cx="12" cy="70" r="2.5" style="animation-delay:-2.5s"/><circle class="snow" cx="346" cy="80" r="3" style="animation-delay:-4.5s"/></g>
+    </svg>
+  </div>
+  <h1>上海聖誕遊</h1>
+  <p>5 天 4 夜｜2026.12.24（四）– 12.28（一）</p>
+  <div class="count" id="count" aria-live="polite">2026.12.24 出發</div>
+</section>
+
+<section id="flight">
+  <h2><i></i>航班</h2>
+  <div class="card fl-sky">
+    <div class="fl-h"><span>12/24（四）去程</span><span>MU5006</span></div>
+    <div class="fl-m"><strong>18:40</strong><span>1h 45m</span><strong>20:25</strong></div>
+    <div class="fl-p"><span>桃園 T2</span><span>浦東 T1</span></div>
+    <p class="note">抵達後入境、領行李，預留約 1 小時</p>
+  </div>
+  <div class="card fl-leaf">
+    <div class="fl-h"><span>12/28（一）回程</span><span>MU5097</span></div>
+    <div class="fl-m"><strong>14:10</strong><span>2h 05m</span><strong>16:15</strong></div>
+    <div class="fl-p"><span>虹橋 T1</span><span>松山 T1</span></div>
+    <p class="note warn">建議 12:10 前到機場報到</p>
+  </div>
+</section>
+
+<section id="plan">
+  <h2><i></i>每日行程</h2>
+  <nav class="days" id="days" aria-label="選擇日期"><a href="#day0" data-i="0" class="on">12/24<small>週四</small></a><a href="#day1" data-i="1">12/25<small>週五</small></a><a href="#day2" data-i="2">12/26<small>週六</small></a><a href="#day3" data-i="3">12/27<small>週日</small></a><a href="#day4" data-i="4">12/28<small>週一</small></a></nav>
+  <div id="day"><div class="dp" id="day0"><div class="dayhead" style="background:var(--sky)"><svg viewBox="0 0 46 46" aria-hidden="true"><path d="M8 30l30-10-4-5-30 6z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><path d="M22 24l8 12" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/></svg><div><small>Day 1・12/24（週四）・住 桔子水晶酒店</small><b>平安夜・抵達上海</b></div></div><ul class="tl"><li class=""><time>18:40</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-飛機">飛機</span></div><b>MU5006 桃園 T2 → 浦東 T1</b><small>20:25 抵達</small></div></li><li class=""><time>21:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-計程車">計程車</span></div><b>浦東機場 → 旅館</b><small>約 1 小時；搭網約車或計程車較穩，地鐵末班車時間要先確認</small></div></li><li class=""><time>22:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-住宿">住宿</span></div><b>桔子水晶酒店</b><small>金陵東路 511 號，入住休息</small><a href="https://www.google.com/maps/search/?api=1&query=%E6%A1%94%E5%AD%90%E6%B0%B4%E6%99%B6%E9%85%92%E5%BA%97%20%E9%87%91%E9%99%B5%E6%9D%B1%E8%B7%AF511%E8%99%9F" target="_blank" rel="noopener">在地圖開啟</a></div></li></ul></div><div class="dp" id="day1"><div class="dayhead" style="background:var(--coral)"><svg viewBox="0 0 46 46" aria-hidden="true"><path d="M23 6L9 26h28zM23 18L5 38h36z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/></svg><div><small>Day 2・12/25（週五）・住 桔子水晶酒店</small><b>聖誕氛圍日：張園＋靜安嘉里＋外灘</b></div></div><ul class="tl"><li class=""><time>08:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>早餐：旅館自助早餐</b><small>吃飽再出發</small></div></li><li class=""><time>09:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-地鐵">地鐵</span></div><b>前往南京西路站</b><small>2／12／13 號線，旅館出發約 30–40 分鐘</small></div></li><li class="must"><time>10:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-必去">必去</span></div><b>張園</b><small>石庫門街區，聖誕裝飾與拍照點</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E5%BC%B5%E5%9C%92" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>11:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-地鐵">地鐵</span></div><b>前往靜安寺站</b><small>2 號線一站，再步行到嘉里中心</small></div></li><li class="must"><time>12:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-必去">必去</span></div><b>靜安嘉里中心</b><small>聖誕裝置與逛街</small><a href="https://www.google.com/maps/search/?api=1&query=%E9%9D%9C%E5%AE%89%E5%98%89%E9%87%8C%E4%B8%AD%E5%BF%83" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>12:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>午餐：嘉里中心內或周邊</b><small>商場內餐廳選擇多</small><a href="https://www.google.com/maps/search/?api=1&query=%E9%9D%9C%E5%AE%89%E5%98%89%E9%87%8C%E4%B8%AD%E5%BF%83%20%E9%A4%90%E5%BB%B3" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>14:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-步行">步行</span></div><b>南京西路 聖誕櫥窗</b><small>邊逛邊找下午茶</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E5%8D%97%E4%BA%AC%E8%A5%BF%E8%B7%AF" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>16:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-地鐵">地鐵</span></div><b>前往南京東路站</b><small>2 號線</small></div></li><li class="must"><time>17:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-必去">必去</span></div><b>外灘 黃昏與亮燈</b><small>趕上日落到夜景</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E5%A4%96%E7%81%98" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>18:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>晚餐：外灘／福州路一帶</b><small>本幫菜可選老正興</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E8%80%81%E6%AD%A3%E8%88%88%E8%8F%9C%E9%A4%A8%20%E7%A6%8F%E5%B7%9E%E8%B7%AF" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>20:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-步行">步行</span></div><b>南京東路步行街 走回旅館</b><small>夜晚燈海，約 15–20 分鐘</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E5%8D%97%E4%BA%AC%E6%9D%B1%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97" target="_blank" rel="noopener">在地圖開啟</a></div></li></ul></div><div class="dp" id="day2"><div class="dayhead" style="background:var(--sun)"><svg viewBox="0 0 46 46" aria-hidden="true"><path d="M6 40V22h10v18M18 40V12h12v28M32 40V26h9v14" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/></svg><div><small>Day 3・12/26（週六）・住 桔子水晶酒店</small><b>遠征日：武康路＋安福路＋愚園路</b></div></div><ul class="tl"><li class=""><time>08:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>早餐：旅館自助早餐</b><small>今天走比較遠，早點出發</small></div></li><li class=""><time>09:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-地鐵">地鐵</span></div><b>前往交通大學站</b><small>先走到最近的 10 號線站（豫園站或老西門站，以地圖為準），約 30 分鐘</small></div></li><li class="must"><time>10:15</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-必去">必去</span></div><b>武康路・武康大樓</b><small>梧桐樹老洋房，從地鐵站步行約 15 分鐘</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E6%AD%A6%E5%BA%B7%E5%A4%A7%E6%A8%93" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class="must"><time>11:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-步行">步行</span><span class="tag t-必去">必去</span></div><b>安福路</b><small>咖啡、小店、街拍</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E5%AE%89%E7%A6%8F%E8%B7%AF" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>12:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>午餐：安福路一帶</b><small>咖啡簡餐或生煎都行</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E5%AE%89%E7%A6%8F%E8%B7%AF%20%E9%A4%90%E5%BB%B3" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>14:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-地鐵">地鐵</span></div><b>前往江蘇路站</b><small>2／11 號線，約 25–30 分鐘</small></div></li><li class="must"><time>14:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-必去">必去</span></div><b>愚園路</b><small>老洋房與安靜咖啡館，慢慢散步</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E6%84%9A%E5%9C%92%E8%B7%AF" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>16:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>下午茶：愚園路一帶</b><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E6%84%9A%E5%9C%92%E8%B7%AF%20%E5%92%96%E5%95%A1" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>18:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>晚餐：愚園路／靜安寺一帶</b><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E6%84%9A%E5%9C%92%E8%B7%AF%20%E9%A4%90%E5%BB%B3" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>20:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-地鐵">地鐵</span></div><b>回旅館</b><small>約 40 分鐘</small></div></li></ul></div><div class="dp" id="day3"><div class="dayhead" style="background:var(--leaf)"><svg viewBox="0 0 46 46" aria-hidden="true"><path d="M23 4v6M17 10h12M23 40v5" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/><ellipse cx="23" cy="26" rx="12" ry="14" fill="#F2A497" stroke="#3E3A39" stroke-width="3"/><path d="M14 20h18M12 30h22" stroke="#3E3A39" stroke-width="2.5"/></svg><div><small>Day 4・12/27（週日）・住 桔子水晶酒店</small><b>老城廂＋田子坊＋新天地</b></div></div><ul class="tl"><li class=""><time>09:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>早餐：旅館自助早餐</b></div></li><li class=""><time>09:45</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-步行">步行</span></div><b>步行前往豫園</b><small>約 15 分鐘，以地圖為準</small></div></li><li class="must"><time>10:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-必去">必去</span></div><b>豫園</b><small>園林建築，早上人較少</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E8%B1%AB%E5%9C%92" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class="must"><time>11:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-必去">必去</span></div><b>城隍廟老街</b><small>小吃與商店街</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E5%9F%8E%E9%9A%8D%E5%BB%9F" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>12:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>午餐：南翔饅頭店 小籠包</b><small>城隍廟內名店，可能要排隊</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E5%8D%97%E7%BF%94%E9%A5%85%E9%A0%AD%E5%BA%97%20%E8%B1%AB%E5%9C%92" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>14:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-地鐵">地鐵</span></div><b>前往新天地站</b><small>先走到最近的 10 號線站（豫園站或老西門站），約 10–15 分鐘</small></div></li><li class=""><time>14:20</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-步行">步行</span></div><b>走到田子坊</b><small>約 20 分鐘</small></div></li><li class="must"><time>14:45</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-必去">必去</span></div><b>田子坊</b><small>弄堂裡的小店與藝品</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E7%94%B0%E5%AD%90%E5%9D%8A" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>16:45</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-步行">步行</span></div><b>走到新天地</b><small>約 20 分鐘，順路找下午茶</small></div></li><li class="must"><time>17:15</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-必去">必去</span></div><b>新天地 聖誕裝飾</b><small>石庫門街區，天黑前先逛一圈</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E6%96%B0%E5%A4%A9%E5%9C%B0" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>18:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-美食">美食</span></div><b>晚餐：新天地一帶</b><small>最後一晚，挑一家喜歡的</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E6%96%B0%E5%A4%A9%E5%9C%B0%20%E9%A4%90%E5%BB%B3" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>20:00</time><i class="dot"></i><div class="box"><div class="row"></div><b>新天地 聖誕夜景</b><small>亮燈後再逛一圈</small><a href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%20%E6%96%B0%E5%A4%A9%E5%9C%B0" target="_blank" rel="noopener">在地圖開啟</a></div></li><li class=""><time>21:00</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-地鐵">地鐵</span></div><b>回旅館</b><small>10 號線回豫園站或老西門站，再步行</small></div></li></ul></div><div class="dp" id="day4"><div class="dayhead" style="background:var(--sky)"><svg viewBox="0 0 46 46" aria-hidden="true"><path d="M8 30l30-10-4-5-30 6z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><path d="M22 24l8 12" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/></svg><div><small>Day 5・12/28（週一）</small><b>回家囉</b></div></div><ul class="tl"><li class=""><time>08:30</time><i class="dot"></i><div class="box"><div class="row"></div><b>早餐＋退房</b><small>行李先整理好</small></div></li><li class=""><time>10:30</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-地鐵">地鐵</span></div><b>前往虹橋機場 T1</b><small>10 號線到虹橋 1 號航站樓站，預留 1 小時以上，出發前用地圖確認路線</small></div></li><li class=""><time>12:10</time><i class="dot"></i><div class="box"><div class="row"></div><b>機場報到</b><small>虹橋 T1</small></div></li><li class=""><time>14:10</time><i class="dot"></i><div class="box"><div class="row"><span class="tag t-飛機">飛機</span></div><b>MU5097 虹橋 T1 → 松山 T1</b><small>16:15 抵達</small></div></li></ul></div></div>
+  <p class="note" style="text-align:center">順序可依天氣調整；交通時間為概估，以地圖路線為準；餐廳營業時間請出發前再確認。</p>
+</section>
+
+<section id="prep">
+  <h2><i></i>行前準備</h2>
+  <div class="card"><b style="font-weight:400">待買／待辦</b><ul class="ck" id="ck"><li><label><input type="checkbox" data-i="0"><span>確認台胞證（或電子台胞證）有效，效期要足夠</span></label></li><li><label><input type="checkbox" data-i="1"><span>出發前查看陸委會、外交部的最新赴陸提醒</span></label></li><li><label><input type="checkbox" data-i="2"><span>東航 MU5006／MU5097 網路報到與選位</span></label></li><li><label><input type="checkbox" data-i="3"><span>綁定支付寶或微信支付，準備少量現金</span></label></li><li><label><input type="checkbox" data-i="4"><span>準備上網：漫遊或 eSIM；先下載離線地圖</span></label></li><li><label><input type="checkbox" data-i="5"><span>查張園、靜安嘉里中心、新天地的聖誕活動與開放時間</span></label></li><li><label><input type="checkbox" data-i="6"><span>確認每間餐廳的營業時間，熱門店先預約</span></label></li><li><label><input type="checkbox" data-i="7"><span>查上海天氣，帶保暖外套與好走的鞋（12/26 走比較多）</span></label></li><li><label><input type="checkbox" data-i="8"><span>行動電源放隨身行李，確認旅遊保險</span></label></li></ul></div>
+  <h2><i style="background:var(--sky)"></i>住宿</h2>
+  <div class="card" id="stay"><div class="stay"><span>桔子水晶酒店（金陵東路 511 號）<br><a href="https://www.google.com/maps/search/?api=1&query=%E6%A1%94%E5%AD%90%E6%B0%B4%E6%99%B6%E9%85%92%E5%BA%97%20%E9%87%91%E9%99%B5%E6%9D%B1%E8%B7%AF511%E8%99%9F" target="_blank" rel="noopener">在地圖開啟</a></span><small>12/24–12/28（4 晚）</small></div></div>
+</section>
+
+<p class="foot"><a href="https://www.google.com/maps/d/viewer?mid=14yyfvW-kVM7SU-9zAaIZpt2w-lH-czY" target="_blank" rel="noopener">開啟我的 Google 地圖（上海生煎包）</a></p>
+</main>
+
+<script>
+/* ===== 行程資料：想改內容，只要改這一區 ===== */
+const START = new Date(2026, 11, 24), END = new Date(2026, 11, 28);
+const HOTEL = '桔子水晶酒店';
+const DAYS = [
+ {d:'12/24', w:'四', title:'平安夜・抵達上海', stay:1, c:'--sky', icon:'plane', items:[
+  {t:'18:40', tag:'飛機', n:'MU5006 桃園 T2 → 浦東 T1', d:'20:25 抵達'},
+  {t:'21:30', tag:'計程車', n:'浦東機場 → 旅館', d:'約 1 小時；搭網約車或計程車較穩，地鐵末班車時間要先確認'},
+  {t:'22:30', tag:'住宿', n:HOTEL, d:'金陵東路 511 號，入住休息', q:'桔子水晶酒店 金陵東路511號'}]},
+ {d:'12/25', w:'五', title:'聖誕氛圍日：張園＋靜安嘉里＋外灘', stay:1, c:'--coral', icon:'tree', items:[
+  {t:'08:30', tag:'美食', n:'早餐：旅館自助早餐', d:'吃飽再出發'},
+  {t:'09:30', tag:'地鐵', n:'前往南京西路站', d:'2／12／13 號線，旅館出發約 30–40 分鐘'},
+  {t:'10:00', n:'張園', d:'石庫門街區，聖誕裝飾與拍照點', must:1, q:'上海 張園'},
+  {t:'11:30', tag:'地鐵', n:'前往靜安寺站', d:'2 號線一站，再步行到嘉里中心'},
+  {t:'12:00', n:'靜安嘉里中心', d:'聖誕裝置與逛街', must:1, q:'靜安嘉里中心'},
+  {t:'12:30', tag:'美食', n:'午餐：嘉里中心內或周邊', d:'商場內餐廳選擇多', q:'靜安嘉里中心 餐廳'},
+  {t:'14:30', tag:'步行', n:'南京西路 聖誕櫥窗', d:'邊逛邊找下午茶', q:'上海 南京西路'},
+  {t:'16:30', tag:'地鐵', n:'前往南京東路站', d:'2 號線'},
+  {t:'17:00', n:'外灘 黃昏與亮燈', d:'趕上日落到夜景', must:1, q:'上海 外灘'},
+  {t:'18:30', tag:'美食', n:'晚餐：外灘／福州路一帶', d:'本幫菜可選老正興', q:'上海 老正興菜館 福州路'},
+  {t:'20:00', tag:'步行', n:'南京東路步行街 走回旅館', d:'夜晚燈海，約 15–20 分鐘', q:'上海 南京東路步行街'}]},
+ {d:'12/26', w:'六', title:'遠征日：武康路＋安福路＋愚園路', stay:1, c:'--sun', icon:'bund', items:[
+  {t:'08:30', tag:'美食', n:'早餐：旅館自助早餐', d:'今天走比較遠，早點出發'},
+  {t:'09:30', tag:'地鐵', n:'前往交通大學站', d:'先走到最近的 10 號線站（豫園站或老西門站，以地圖為準），約 30 分鐘'},
+  {t:'10:15', n:'武康路・武康大樓', d:'梧桐樹老洋房，從地鐵站步行約 15 分鐘', must:1, q:'上海 武康大樓'},
+  {t:'11:30', tag:'步行', n:'安福路', d:'咖啡、小店、街拍', must:1, q:'上海 安福路'},
+  {t:'12:30', tag:'美食', n:'午餐：安福路一帶', d:'咖啡簡餐或生煎都行', q:'上海 安福路 餐廳'},
+  {t:'14:00', tag:'地鐵', n:'前往江蘇路站', d:'2／11 號線，約 25–30 分鐘'},
+  {t:'14:30', n:'愚園路', d:'老洋房與安靜咖啡館，慢慢散步', must:1, q:'上海 愚園路'},
+  {t:'16:30', tag:'美食', n:'下午茶：愚園路一帶', d:'', q:'上海 愚園路 咖啡'},
+  {t:'18:30', tag:'美食', n:'晚餐：愚園路／靜安寺一帶', d:'', q:'上海 愚園路 餐廳'},
+  {t:'20:00', tag:'地鐵', n:'回旅館', d:'約 40 分鐘'}]},
+ {d:'12/27', w:'日', title:'老城廂＋田子坊＋新天地', stay:1, c:'--leaf', icon:'lantern', items:[
+  {t:'09:00', tag:'美食', n:'早餐：旅館自助早餐', d:''},
+  {t:'09:45', tag:'步行', n:'步行前往豫園', d:'約 15 分鐘，以地圖為準'},
+  {t:'10:00', n:'豫園', d:'園林建築，早上人較少', must:1, q:'上海 豫園'},
+  {t:'11:30', n:'城隍廟老街', d:'小吃與商店街', must:1, q:'上海 城隍廟'},
+  {t:'12:30', tag:'美食', n:'午餐：南翔饅頭店 小籠包', d:'城隍廟內名店，可能要排隊', q:'上海 南翔饅頭店 豫園'},
+  {t:'14:00', tag:'地鐵', n:'前往新天地站', d:'先走到最近的 10 號線站（豫園站或老西門站），約 10–15 分鐘'},
+  {t:'14:20', tag:'步行', n:'走到田子坊', d:'約 20 分鐘'},
+  {t:'14:45', n:'田子坊', d:'弄堂裡的小店與藝品', must:1, q:'上海 田子坊'},
+  {t:'16:45', tag:'步行', n:'走到新天地', d:'約 20 分鐘，順路找下午茶'},
+  {t:'17:15', n:'新天地 聖誕裝飾', d:'石庫門街區，天黑前先逛一圈', must:1, q:'上海 新天地'},
+  {t:'18:30', tag:'美食', n:'晚餐：新天地一帶', d:'最後一晚，挑一家喜歡的', q:'上海 新天地 餐廳'},
+  {t:'20:00', n:'新天地 聖誕夜景', d:'亮燈後再逛一圈', q:'上海 新天地'},
+  {t:'21:00', tag:'地鐵', n:'回旅館', d:'10 號線回豫園站或老西門站，再步行'}]},
+ {d:'12/28', w:'一', title:'回家囉', stay:0, c:'--sky', icon:'plane', items:[
+  {t:'08:30', n:'早餐＋退房', d:'行李先整理好'},
+  {t:'10:30', tag:'地鐵', n:'前往虹橋機場 T1', d:'10 號線到虹橋 1 號航站樓站，預留 1 小時以上，出發前用地圖確認路線'},
+  {t:'12:10', n:'機場報到', d:'虹橋 T1'},
+  {t:'14:10', tag:'飛機', n:'MU5097 虹橋 T1 → 松山 T1', d:'16:15 抵達'}]}
+];
+const TODO = ['確認台胞證（或電子台胞證）有效，效期要足夠','出發前查看陸委會、外交部的最新赴陸提醒','東航 MU5006／MU5097 網路報到與選位','綁定支付寶或微信支付，準備少量現金','準備上網：漫遊或 eSIM；先下載離線地圖','查張園、靜安嘉里中心、新天地的聖誕活動與開放時間','確認每間餐廳的營業時間，熱門店先預約','查上海天氣，帶保暖外套與好走的鞋（12/26 走比較多）','行動電源放隨身行李，確認旅遊保險'];
+const STAY = [[HOTEL+'（金陵東路 511 號）','12/24–12/28（4 晚）','桔子水晶酒店 金陵東路511號']];
+/* ===== 以下是程式（內容已寫進頁面，這段只負責日期切換、倒數與勾選記憶） ===== */
+const $=s=>document.querySelector(s);
+document.documentElement.classList.add('js');
+const tabs=[...document.querySelectorAll('#days a')],ps=[...document.querySelectorAll('.dp')];
+function show(i,animate){
+  tabs.forEach((a,k)=>{a.classList.toggle('on',k===i);if(k===i)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')});
+  ps.forEach((p,k)=>{p.classList.toggle('on',k===i);p.classList.remove('pop')});
+  if(animate){const e=ps[i];void e.offsetWidth;e.classList.add('pop')}
+}
+$('#days').addEventListener('click',e=>{const a=e.target.closest('a');if(a){e.preventDefault();show(+a.dataset.i,true)}});
+const now=new Date(),today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+const idx=Math.round((today-START)/864e5);
+show(idx>=0&&idx<DAYS.length?idx:0,false);
+const left=Math.round((START-today)/864e5);
+$('#count').textContent=left>0?'出發倒數 '+left+' 天':today<=END?'旅程進行中，玩得開心！':'旅程結束，歡迎回家';
+let saved={};try{saved=JSON.parse(localStorage.getItem('sh-todo')||'{}')}catch(e){}
+document.querySelectorAll('#ck input').forEach(c=>{c.checked=!!saved[c.dataset.i]});
+$('#ck').addEventListener('change',e=>{saved[e.target.dataset.i]=e.target.checked;try{localStorage.setItem('sh-todo',JSON.stringify(saved))}catch(_){}});
+const links=document.querySelectorAll('.nav a');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.dataset.s===e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+['flight','plan','prep'].forEach(id=>io.observe(document.getElementById(id)));
+</script>
+</body>
+</html>
